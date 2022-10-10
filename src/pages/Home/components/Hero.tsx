@@ -43,11 +43,13 @@ const HeroTitle = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
+
 const HeroSlogan = styled.h2`
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 24px;
 `;
+
 const HeroDescription = styled.p`
   line-height: 1.6;
   text-align: center;

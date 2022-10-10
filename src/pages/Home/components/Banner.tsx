@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ButtonLink, LinkContainer } from '../../../styles/sharedStyles'
+import { SecondaryButtonLink, LinkContainer } from '../../../styles/sharedStyles'
 
 import banner from '../../../assets/banner.png'
 
@@ -53,7 +53,7 @@ const Banner = () => {
                     Tudo aquilo que precisa, para o seu dia-a-dia.
                 </BannerDescription>
                 <LinkContainer>
-                    <ButtonLink secondary to='/produtos'>Produtos</ButtonLink>
+                    <SecondaryButtonLink to='/produtos'>Produtos</SecondaryButtonLink>
                 </LinkContainer>
             </BannerInfo>
             <ImageContainer>
