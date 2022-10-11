@@ -5,7 +5,6 @@ import { Product } from '../types/product';
 import styled from 'styled-components/macro'
 
 const ProductContainer = styled.div`
-  width: 30%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -18,7 +17,7 @@ const ProductContainer = styled.div`
 `;
 
 const Block = styled.div`
-  height: 350px;
+  height: 500px;
   border-radius: 8px;
   background-color: white;
   display: flex;
@@ -29,23 +28,42 @@ const Block = styled.div`
   color: var(--logo-blue);
 `;
 
-const ProductImg = styled.img``;
+const ProductImgContainer = styled.div`
+  max-height: 300px;
+`;
+
+const ProductImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+const ProductInfoContainer = styled.div`
+  margin: 0 20px;
+  text-align: center;
+`;
 
 const ProductName = styled.h3``;
 
-const ProductBrand = styled.p``;
+const ProductBrand = styled.p`
+  margin-bottom: 36px;
+`;
 
-const ProductPrice = styled.h2``;
+const ProductPrice = styled.h2`
+  margin-bottom: 0;
+`;
 
-const ProductCard = ({ product } : {product: Product}) => {
-  console.log(product.image)
+const ProductCard = ({ product }: { product: Product }) => {
   return (
     <ProductContainer>
       <Block>
-        <ProductImg src={product.image} alt="product image" />
-        <ProductName>{product.name}</ProductName>
-        <ProductBrand>{product.brand}</ProductBrand>
-        <ProductPrice>{product.price}</ProductPrice>
+        <ProductImgContainer>
+          <ProductImg src={product.image} alt="product image" />
+        </ProductImgContainer>
+        <ProductInfoContainer>
+          <ProductName>{product.name}</ProductName>
+          <ProductBrand>{product.brand}</ProductBrand>
+          <ProductPrice>{product.price}</ProductPrice>
+        </ProductInfoContainer>
       </Block>
     </ProductContainer>
   )
