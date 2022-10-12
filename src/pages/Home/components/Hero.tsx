@@ -72,6 +72,7 @@ const Image = styled.div`
   border-radius: 8px;
   background-image: url(${hero});
   background-position: top center;
+  filter: saturate(90%);
 `;
 
 const Hero = () => {

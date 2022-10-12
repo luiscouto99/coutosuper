@@ -3,12 +3,15 @@ import React from "react";
 import { Container, Main } from "../../styles/sharedStyles";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import ProductCarrousel from "../../components/ProductCarrousel";
 
 const Promocoes = () => {
   return (
     <Container>
       <Header />
-      <Main></Main>
+      <Main>
+        <ProductCarrousel marginTop={true} />
+      </Main>
       <Footer />
     </Container>
   );
