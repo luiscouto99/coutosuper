@@ -9,6 +9,7 @@ import styled from 'styled-components/macro'
 const HeroContainer = styled.section`
   display: flex;
   column-gap: 10px;
+  margin-top: 108px;
 `;
 
 const Information = styled.div`

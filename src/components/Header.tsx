@@ -1,51 +1,76 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-import logo from '../assets/logo.jpg'
+import logo from "../assets/logo.jpg";
 
-import styled from 'styled-components/macro'
+import styled, { css } from "styled-components/macro";
 
-const HeaderContainer = styled.header`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 64px;
+type HeaderContainerProps = {
+  offset: number;
+};
+const HeaderContainer = styled.header<HeaderContainerProps>`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 192px;
+  z-index:1;
+
+  ${(props) =>
+    props.offset > 1 &&
+    css`
+      box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.1),
+        0 1px 4px hsla(0, 0%, 0%, 0.1), 0 2px 8px hsla(0, 0%, 0%, 0.1);
+    `}
 `;
 
 const LogoLink = styled(Link)`
-    width: 100px;
+  width: 100px;
 `;
 
 const Logo = styled.img`
-    width: 100%;
+  width: 100%;
 `;
 
 const NavbarContainer = styled.nav`
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 `;
 
 const NavbarLink = styled(Link)`
-    font-weight: 500;
+  font-weight: 500;
 `;
 
 const Header = () => {
-    return (
-        <HeaderContainer>
-            <LogoLink to='/'>
-                <Logo src={logo} alt="Logótipo Supermercado Couto" />
-            </LogoLink>
+  const [yOffset, setYOffset] = useState(0);
 
-            <NavbarContainer>
-                <NavbarLink to='/'>Bem Vindo</NavbarLink>
-                <NavbarLink to='/sobre-nos'>Sobre Nós</NavbarLink>
-                <NavbarLink to='/produtos'>Produtos</NavbarLink>
-                <NavbarLink to='/promocoes'>Promoções</NavbarLink>
-                <NavbarLink to='/contactos'>Contactos</NavbarLink>
-            </NavbarContainer>
+  useEffect(() => {
+    const onScroll = () => setYOffset(window.pageYOffset);
 
-        </HeaderContainer>
-    )
-}
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  console.log(yOffset);
+  return (
+    <HeaderContainer offset={yOffset}>
+      <LogoLink to="/">
+        <Logo src={logo} alt="Logótipo Supermercado Couto" />
+      </LogoLink>
 
-export default Header
+      <NavbarContainer>
+        <NavbarLink to="/">Bem Vindo</NavbarLink>
+        <NavbarLink to="/sobre-nos">Sobre Nós</NavbarLink>
+        <NavbarLink to="/produtos">Produtos</NavbarLink>
+        <NavbarLink to="/promocoes">Promoções</NavbarLink>
+        <NavbarLink to="/contactos">Contactos</NavbarLink>
+      </NavbarContainer>
+    </HeaderContainer>
+  );
+};
+
+export default Header;

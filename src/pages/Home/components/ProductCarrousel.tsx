@@ -16,7 +16,7 @@ const CarrouselContainer = styled.section`
 `;
 
 const ButtonContainer = styled.div`
-  margin: 24px 0;
+  margin: 84px 0 24px;
   text-align: center;
 `;
 

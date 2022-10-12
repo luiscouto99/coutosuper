@@ -17,7 +17,7 @@ export const Main = styled.main`
   flex-direction: column;
   /*justify-content: center;
   align-items: center; */
-  margin: 0 64px;
+  margin: 0 192px;
   gap: 10px;
 `;
 
