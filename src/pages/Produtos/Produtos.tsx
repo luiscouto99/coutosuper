@@ -2,23 +2,19 @@ import React from "react";
 
 import { Container, Main } from "../../styles/sharedStyles";
 import Header from "../../components/Header";
-import Hero from "./components/Hero";
-import Banner from "./components/Banner";
-import ProductCarrousel from "../../components/ProductCarrousel";
 import Footer from "../../components/Footer";
+import ProductCarrousel from "../../components/ProductCarrousel";
 
-const Home = () => {
+const Produtos = () => {
   return (
     <Container>
       <Header />
       <Main>
-        <Hero />
-        <Banner />
-        <ProductCarrousel marginTop={false} />
+        <ProductCarrousel marginTop={true} />
       </Main>
       <Footer />
     </Container>
   );
 };
 
-export default Home;
+export default Produtos;

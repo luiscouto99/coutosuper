@@ -8,7 +8,7 @@ import styled from 'styled-components/macro'
 
 const BannerContainer = styled.section`
   width: 100%;
-  padding: 40px 300px;
+  padding: 40px 250px;
   border-radius: 10px;
   color: white;
   display: flex;

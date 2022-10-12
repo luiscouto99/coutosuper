@@ -55,7 +55,6 @@ const Header = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  console.log(yOffset);
   return (
     <HeaderContainer offset={yOffset}>
       <LogoLink to="/">
@@ -63,7 +62,6 @@ const Header = () => {
       </LogoLink>
 
       <NavbarContainer>
-        <NavbarLink to="/">Bem Vindo</NavbarLink>
         <NavbarLink to="/sobre-nos">Sobre Nós</NavbarLink>
         <NavbarLink to="/produtos">Produtos</NavbarLink>
         <NavbarLink to="/promocoes">Promoções</NavbarLink>
