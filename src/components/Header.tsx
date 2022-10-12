@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import logo from "../assets/logo.jpg";
 
@@ -28,7 +28,7 @@ const HeaderContainer = styled.header<HeaderContainerProps>`
     `}
 `;
 
-const LogoLink = styled(Link)`
+const LogoLink = styled(NavLink)`
   width: 100px;
 `;
 
@@ -41,8 +41,31 @@ const NavbarContainer = styled.nav`
   gap: 20px;
 `;
 
-const NavbarLink = styled(Link)`
+const NavbarLink = styled(NavLink)`
   font-weight: 500;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--logo-green);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  &.active {
+    color: var(--logo-green);
+    font-weight: 600;
+  }
 `;
 
 const Header = () => {

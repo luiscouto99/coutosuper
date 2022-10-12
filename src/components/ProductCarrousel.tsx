@@ -36,7 +36,7 @@ const ProductCarrousel = ({ marginTop }: { marginTop: boolean }) => {
         ))}
       </CarrouselContainer>
       <ButtonContainer>
-        <ButtonLink to="produtos">Ver Artigos em Promoção</ButtonLink>
+        <ButtonLink to="promocoes">Ver Artigos em Promoção</ButtonLink>
       </ButtonContainer>
     </Carrousel>
   );
