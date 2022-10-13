@@ -5,7 +5,7 @@ import { ProductCategory } from '../types/productCategory';
 import styled from 'styled-components/macro';
 
 const CategoryContainer = styled.div`
-  max-width: 499px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;

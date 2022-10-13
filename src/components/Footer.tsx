@@ -126,7 +126,7 @@ const Footer = () => {
           width="800"
           height="450"
           loading="lazy"
-        ></Map>
+        />
       </MapContainer>
     </FooterContainer>
   );
