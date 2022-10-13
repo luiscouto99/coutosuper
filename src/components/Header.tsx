@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 
 import styled, { css } from "styled-components/macro";
+import Hamburger from "./Hamburger";
+import Navbar from "./Navbar";
 
 type HeaderContainerProps = {
   offset: number;
@@ -40,60 +42,29 @@ const Logo = styled.img`
   width: 100%;
 `;
 
-const NavbarContainer = styled.nav`
-  display: flex;
-  gap: 20px;
-`;
 
-const NavbarLink = styled(NavLink)`
-  font-weight: 500;
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--logo-green);
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover:before {
-    visibility: visible;
-    width: 100%;
-  }
-  
-  &.active {
-    color: var(--logo-green);
-    font-weight: 600;
-  }
-`;
 
 const Header = () => {
   const [yOffset, setYOffset] = useState(0);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
-    const onScroll = () => setYOffset(window.pageYOffset);
-
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', () => setYOffset(window.pageYOffset), true);
+    window.addEventListener('resize', () => setWindowSize(window.innerWidth));
+    return () => {
+      window.removeEventListener('scroll', () => setYOffset(window.pageYOffset));
+      window.removeEventListener('resize', () => setWindowSize(window.innerWidth));
+    };
   }, []);
+
+
   return (
     <HeaderContainer offset={yOffset}>
       <LogoLink to="/">
         <Logo src={logo} alt="Logótipo Supermercado Couto" />
       </LogoLink>
 
-      <NavbarContainer>
-        <NavbarLink to="/sobre-nos">Sobre Nós</NavbarLink>
-        <NavbarLink to="/produtos">Produtos</NavbarLink>
-        <NavbarLink to="/promocoes">Promoções</NavbarLink>
-        <NavbarLink to="/contactos">Contactos</NavbarLink>
-      </NavbarContainer>
+      {windowSize >= 688 ? <Navbar /> : <Hamburger />}
     </HeaderContainer>
   );
 };

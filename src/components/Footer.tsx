@@ -128,20 +128,20 @@ const Footer = () => {
         <OptionsList>
           <Title>Contactos</Title>
           <OptionItem>
-            Morada:
+            Morada:&nbsp;
             <Option>
-              &nbsp;Rua Desembargador Correia Teles 188, 3860-362 Estarreja
+              Rua Desembargador Correia Teles 188, 3860-362 Estarreja
             </Option>
           </OptionItem>
 
           <OptionItem>
-            Email:
-            <Option>&nbsp;geral@coutosuper.pt</Option>
+            Email:&nbsp;
+            <Option>geral@coutosuper.pt</Option>
           </OptionItem>
 
           <OptionItem>
-            Telefone:
-            <Option>&nbsp;234 843 587</Option>
+            Telefone:&nbsp;
+            <Option>234 843 587</Option>
           </OptionItem>
         </OptionsList>
 
