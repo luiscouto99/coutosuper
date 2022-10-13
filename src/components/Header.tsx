@@ -49,7 +49,7 @@ const NavbarLink = styled(NavLink)`
     content: '';
     position: absolute;
     width: 0;
-    height: 0.5px;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: var(--logo-green);

@@ -8,6 +8,13 @@ import { productsDB } from "../productsDB";
 
 import styled from "styled-components/macro";
 
+type CarrouselProps = {
+  marginTop: boolean;
+};
+const Carrousel = styled.div<CarrouselProps>`
+  margin-top: ${(props) => props.marginTop ? '108px' : '0'};
+`;
+
 const CarrouselContainer = styled.section`
   display: flex;
   justify-content: space-between;
@@ -20,14 +27,7 @@ const ButtonContainer = styled.div`
   text-align: center;
 `;
 
-type CarrouselProps = {
-  marginTop: boolean;
-};
-const Carrousel = styled.div<CarrouselProps>`
-  margin-top: ${(props) => props.marginTop ? '108px' : '0'};
-`;
-
-const ProductCarrousel = ({ marginTop }: { marginTop: boolean }) => {
+const ProductCarrousel = ({ marginTop, showButton }: { marginTop: boolean, showButton: boolean }) => {
   return (
     <Carrousel marginTop={marginTop}>
       <CarrouselContainer>
@@ -35,9 +35,11 @@ const ProductCarrousel = ({ marginTop }: { marginTop: boolean }) => {
           <ProductCard key={product.id} product={product} />
         ))}
       </CarrouselContainer>
-      <ButtonContainer>
-        <ButtonLink to="promocoes">Ver Artigos em Promoção</ButtonLink>
-      </ButtonContainer>
+      {showButton && (
+        <ButtonContainer>
+          <ButtonLink to="promocoes">Ver Artigos em Promoção</ButtonLink>
+        </ButtonContainer>
+      )}
     </Carrousel>
   );
 };

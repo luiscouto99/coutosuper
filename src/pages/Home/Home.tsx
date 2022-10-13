@@ -14,7 +14,7 @@ const Home = () => {
       <Main>
         <Hero />
         <Banner />
-        <ProductCarrousel marginTop={false} />
+        <ProductCarrousel marginTop={false} showButton={true} />
       </Main>
       <Footer />
     </Container>

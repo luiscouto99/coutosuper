@@ -3,14 +3,14 @@ import React from "react";
 import { Container, Main } from "../../styles/sharedStyles";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ProductCarrousel from "../../components/ProductCarrousel";
+import CategoryCarrousel from "../../components/CategoryCarrousel";
 
 const Produtos = () => {
   return (
     <Container>
       <Header />
       <Main>
-        <ProductCarrousel marginTop={true} />
+        <CategoryCarrousel />
       </Main>
       <Footer />
     </Container>

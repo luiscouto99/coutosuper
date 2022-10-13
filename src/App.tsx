@@ -17,7 +17,6 @@ function App() {
         <Route path='/produtos' element={<Produtos />} />
         <Route path='/promocoes' element={<Promocoes />} />
         <Route path='/contactos' element={<Contactos />} />
-
       </Routes>
     </BrowserRouter>
   );

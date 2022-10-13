@@ -10,7 +10,7 @@ const Promocoes = () => {
     <Container>
       <Header />
       <Main>
-        <ProductCarrousel marginTop={true} />
+        <ProductCarrousel marginTop={true} showButton={false} />
       </Main>
       <Footer />
     </Container>
