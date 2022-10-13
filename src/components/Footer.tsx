@@ -70,7 +70,8 @@ const SocialLink = styled.a``;
 
 const SocialLogo = styled.img``;
 
-const MapContainer = styled.div``;
+const MapContainer = styled.div`
+`;
 
 const Map = styled.iframe`
   border: 0;

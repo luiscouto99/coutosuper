@@ -20,6 +20,11 @@ const CarrouselContainer = styled.section`
   justify-content: space-between;
   width: 100%;
   gap: 10px;
+
+  @media (max-width: 1320px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ButtonContainer = styled.div`

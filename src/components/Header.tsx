@@ -26,6 +26,10 @@ const HeaderContainer = styled.header<HeaderContainerProps>`
       box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.1),
         0 1px 4px hsla(0, 0%, 0%, 0.1), 0 2px 8px hsla(0, 0%, 0%, 0.1);
     `}
+
+  @media (max-width: 992px) {
+    padding: 20px 60px;
+  }
 `;
 
 const LogoLink = styled(NavLink)`

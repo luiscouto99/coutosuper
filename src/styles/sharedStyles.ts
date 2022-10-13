@@ -19,6 +19,10 @@ export const Main = styled.main`
   align-items: center; */
   margin: 0 192px;
   gap: 10px;
+
+  @media (max-width: 992px) {
+    margin: 0 60px;
+  }
 `;
 
 type ButtonLinkProps = {

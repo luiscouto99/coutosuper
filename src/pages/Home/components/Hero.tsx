@@ -10,6 +10,10 @@ const HeroContainer = styled.section`
   display: flex;
   column-gap: 10px;
   margin-top: 108px;
+
+  @media (max-width: 1320px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Information = styled.div`
@@ -23,6 +27,16 @@ const Information = styled.div`
   background: -moz-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   background: -webkit-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#013893", endColorstr="#008651", GradientType=1 );
+
+  @media (max-width: 1320px) {
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (max-width: 617px) {
+    height: 545px;
+  }
 `;
 
 const Block = styled.div`
@@ -35,20 +49,34 @@ const Block = styled.div`
   align-items: center;
   padding: 0 10px;
   color: var(--logo-blue);
+
+  @media (max-width: 1320px) {
+    height: 100%;
+    padding: 40px;
+  }
 `;
 
 const HeroTitle = styled.h1`
+  text-align: center;
   font-size: 36px;
   margin-bottom: 12px;
   background: -webkit-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 625px) {
+    font-size: 32px;
+  }
 `;
 
 const HeroSlogan = styled.h2`
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 24px;
+
+  @media (max-width: 625px) {
+    font-size: 18px;
+  }
 `;
 
 const HeroDescription = styled.p`
@@ -64,6 +92,14 @@ const ImageContainer = styled.div`
   background: linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   background: -moz-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   background: -webkit-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
+
+  @media (max-width: 1320px) {
+    height: 600px;
+  }
+
+  @media (max-width: 617px) {
+    height: 475px;
+  }
 `;
 
 const Image = styled.div`
@@ -73,6 +109,7 @@ const Image = styled.div`
   background-image: url(${hero});
   background-position: top center;
   filter: saturate(90%);
+  background-size: cover;
 `;
 
 const Hero = () => {
