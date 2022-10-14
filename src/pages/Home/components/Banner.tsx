@@ -57,7 +57,6 @@ const BannerDescription = styled.p`
 `;
 
 const ImageContainer = styled.div`
-  width: 100%;
 `;
 
 const Image = styled.img`
@@ -81,25 +80,25 @@ const LinkAlign = styled.div`
 `;
 
 const Banner = () => {
-    return (
-        <BannerContainer>
-            <BannerInfo>
-                <BannerTitle>Os melhores frescos,</BannerTitle>
-                <BannerTitle>todos os dias ao melhor preço.</BannerTitle>
-                <BannerDescription>
-                    Tudo aquilo que precisa, para o seu dia-a-dia.
-                </BannerDescription>
-                <LinkAlign>
-                    <LinkContainer>
-                        <SecondaryButtonLink to='/produtos'>Produtos</SecondaryButtonLink>
-                    </LinkContainer>
-                </LinkAlign>
-            </BannerInfo>
-            <ImageContainer>
-                <Image src={banner} alt="banner image" />
-            </ImageContainer>
-        </BannerContainer>
-    )
+  return (
+    <BannerContainer>
+      <BannerInfo>
+        <BannerTitle>Os melhores frescos,</BannerTitle>
+        <BannerTitle>todos os dias ao melhor preço.</BannerTitle>
+        <BannerDescription>
+          Tudo aquilo que precisa, para o seu dia-a-dia.
+        </BannerDescription>
+        <LinkAlign>
+          <LinkContainer>
+            <SecondaryButtonLink to='/produtos'>Produtos</SecondaryButtonLink>
+          </LinkContainer>
+        </LinkAlign>
+      </BannerInfo>
+      <ImageContainer>
+        <Image src={banner} alt="banner image" />
+      </ImageContainer>
+    </BannerContainer>
+  )
 }
 
 export default Banner
