@@ -73,7 +73,7 @@ const CardText = styled.h2<CardTextProps>`
   @media (max-width: 1320px) {
     font-size: 18px;
     width: 100%;
-    margin-right: 80px;
+    margin: 0 80px;
   }
 
   @media (max-width: 688px) {

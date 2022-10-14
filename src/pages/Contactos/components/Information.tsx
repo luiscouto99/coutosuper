@@ -13,6 +13,10 @@ const InfoDisplay = styled.section`
     text-align: center;
     justify-content: space-between;
     gap: 10px;
+
+    @media (max-width: 1090px) {
+        flex-direction: column;
+    }
 `;
 
 const InfoContainer = styled.div`

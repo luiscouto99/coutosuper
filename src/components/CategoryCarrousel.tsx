@@ -12,7 +12,13 @@ const CarrouselContainer = styled.section`
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  gap: 150px;
+  row-gap: 150px;
+  column-gap: 10px;
+
+  @media (max-width: 1210px) {
+    justify-content: center;
+    row-gap: 60px;
+  }
 `;
 
 const CategoryCarrousel = () => {

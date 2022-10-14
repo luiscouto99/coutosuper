@@ -15,6 +15,10 @@ const CategoryContainer = styled.div`
   background: -moz-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   background: -webkit-linear-gradient(45deg, hsla(217, 99%, 29%, 1) 0%, hsla(156, 100%, 26%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#013893", endColorstr="#008651", GradientType=1 );
+
+  @media (max-width: 1210px) {
+    max-width: 363px;
+  }
 `;
 
 const Block = styled.div`

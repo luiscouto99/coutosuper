@@ -6,6 +6,7 @@ import Information from "./components/Information";
 
 import styled from 'styled-components/macro'
 import Horario from "./components/Horario";
+import Footer from "../../components/Footer";
 
 const Map = styled.iframe`
   border: 0;
@@ -26,6 +27,7 @@ const Contactos = () => {
         />
         <Horario />
       </Main>
+      <Footer />
     </Container>
   );
 };
