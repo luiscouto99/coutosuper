@@ -31,4 +31,4 @@ $ npm start
 
 ## Short Demonstration:
 
-[![Alternate Text]({image-url})]({[video-url](https://drive.google.com/file/d/143n8SXX-dGwbgpU4z2pBAnYhq3dO2fGr/view?usp=sharing)} "Couto Super Preview")
+[![Couto Super Preview]()](https://drive.google.com/file/d/143n8SXX-dGwbgpU4z2pBAnYhq3dO2fGr/view?usp=sharing "Couto Super Preview")
