@@ -32,9 +32,11 @@ $ npm start
 ## Short Demonstration:
 Part1:
 
-
-
 https://user-images.githubusercontent.com/103673996/195836855-549fa0c3-eed3-44f0-bb48-cfae2a2efd64.mp4
 
+
+Part2:
+
+https://user-images.githubusercontent.com/103673996/195836983-ad466939-a99f-4071-ab2d-4267eb102398.mp4
 
 
