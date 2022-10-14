@@ -31,4 +31,6 @@ $ npm start
 
 ## Short Demonstration:
 
-[![Couto Super Preview]()](https://drive.google.com/file/d/143n8SXX-dGwbgpU4z2pBAnYhq3dO2fGr/view?usp=sharing "Couto Super Preview")
+[![Couto Super Preview]
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)]
+(https://drive.google.com/file/d/143n8SXX-dGwbgpU4z2pBAnYhq3dO2fGr/view?usp=sharing "Couto Super Preview")
