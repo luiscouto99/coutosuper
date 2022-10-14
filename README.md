@@ -10,7 +10,9 @@ I created two fake DB's, one for products and another for product categories, as
 ***
 
 *Feel free to deploy the project using the following workflow:*
+```
 $ git clone https://github.com/luiscouto99/coutosuper.git
 $ npm install
 $ cd Pokemon-React
 $ npm start
+```
