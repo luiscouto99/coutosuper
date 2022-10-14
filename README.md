@@ -30,7 +30,8 @@ $ npm start
 ***
 
 ## Short Demonstration:
+Part1:
+https://user-images.githubusercontent.com/103673996/195834043-b82ae855-8c67-419a-8b56-5539e7f4e29c.mp4
+Part2:
+https://user-images.githubusercontent.com/103673996/195834086-0fa9f509-0895-419a-bf06-923449328a91.mp4
 
-[![Couto Super Preview]
-(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)]
-(https://drive.google.com/file/d/143n8SXX-dGwbgpU4z2pBAnYhq3dO2fGr/view?usp=sharing "Couto Super Preview")
