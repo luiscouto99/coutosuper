@@ -13,6 +13,22 @@ I created two fake DB's, one for products and another for product categories, as
 ```
 $ git clone https://github.com/luiscouto99/coutosuper.git
 $ npm install
-$ cd Pokemon-React
+$ cd coutosuper
 $ npm start
 ```
+
+***
+
+## Implementations:
+
+- React.js (w/ hooks)
+- Typescript
+- Styled-Components
+- Responsiveness (fit for mobile, tablet and desktop)
+- Figma (design)
+
+***
+
+## Short Demonstration:
+
+[![Alternate Text]({image-url})]({[video-url](https://drive.google.com/file/d/143n8SXX-dGwbgpU4z2pBAnYhq3dO2fGr/view?usp=sharing)} "Couto Super Preview")
