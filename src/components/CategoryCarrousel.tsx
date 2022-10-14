@@ -7,7 +7,7 @@ import CategoryCard from './CategoryCard';
 import styled from "styled-components/macro";
 
 const CarrouselContainer = styled.section`
-    margin-top: 108px;
+  margin-top: 108px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

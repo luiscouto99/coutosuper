@@ -44,6 +44,10 @@ const Card = styled.div<CardProps>`
   ${(props) => props.alignRight && css`
     justify-content: flex-end;
   `}
+
+  @media (max-width: 1320px) {
+
+  }
 `;
 
 type CardTextProps = {
@@ -65,6 +69,17 @@ const CardText = styled.h2<CardTextProps>`
     margin-left: 0;
     margin-right: 80px;
   `}
+
+  @media (max-width: 1320px) {
+    font-size: 18px;
+    width: 100%;
+    margin-right: 80px;
+  }
+
+  @media (max-width: 688px) {
+    margin: 0 20px;
+  }
+
 `;
 
 const SobreNos = () => {
