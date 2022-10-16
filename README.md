@@ -11,9 +11,9 @@ I created two fake DB's, one for products and another for product categories, as
 
 *Feel free to deploy the project using the following workflow:*
 ```
-$ git clone https://github.com/luiscouto99/coutosuper.git
+$ https://github.com/luiscouto99/MindStore.git
 $ npm install
-$ cd coutosuper
+$ cd MindStore
 $ npm start
 ```
 
@@ -21,9 +21,10 @@ $ npm start
 
 ## Implementations:
 
-- React.js (w/ hooks)
+- React.js (w/ hooks) + diving API requests into their own folders
 - Typescript
 - Styled-Components
+- Testing w/ Jest
 - Responsiveness (fit for mobile, tablet and desktop)
 - Figma (design)
 
@@ -32,11 +33,8 @@ $ npm start
 ## Short Demonstration:
 Part1:
 
-https://user-images.githubusercontent.com/103673996/195836855-549fa0c3-eed3-44f0-bb48-cfae2a2efd64.mp4
+https://user-images.githubusercontent.com/103673996/196031956-79c9b063-9c3d-4271-9a30-5f1699100f1b.mp4
 
 
-Part2:
-
-https://user-images.githubusercontent.com/103673996/195836983-ad466939-a99f-4071-ab2d-4267eb102398.mp4
 
 
